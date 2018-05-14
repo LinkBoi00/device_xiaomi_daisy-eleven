@@ -105,8 +105,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
-    libvolumelistener \
-    tinymix
+    libvolumelistener
 
 # A2DP
 PRODUCT_PACKAGES += \
