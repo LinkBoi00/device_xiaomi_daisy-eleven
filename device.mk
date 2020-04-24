@@ -225,6 +225,9 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
     liboverlay \
+    libdisplayconfig.vendor \
+    libqdMetaData \
+    libqdMetaData.vendor \
     libqdMetaData.system \
     libqdMetaData \
     libgenlock \
@@ -514,7 +517,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl \
-    libmediaextractorservice
+    libmediaextractorservice \
+    libwfdaac
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
