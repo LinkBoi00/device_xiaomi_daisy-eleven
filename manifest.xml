@@ -323,6 +323,7 @@
             <name>IUceService</name>
             <instance>com.qualcomm.qti.uceservice</instance>
         </interface>
+        <fqname>@2.2::IUceService/com.qualcomm.qti.uceservice</fqname>
     </hal>
     <hal format="hidl">
         <name>com.qualcomm.qti.wifidisplayhal</name>
@@ -559,6 +560,11 @@
             <name>IService</name>
             <instance>default</instance>
         </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.ims.factory</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IImsFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.imsrtpservice</name>
