@@ -199,7 +199,10 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libqdMetaData.system \
     libgenlock \
-    libtinyxml
+    libtinyxml \
+    libdisplayconfig.vendor \
+    libqdMetaData \
+    libqdMetaData.vendor
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
@@ -467,7 +470,8 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_PACKAGES += \
     libaacwrapper \
-    libnl
+    libnl \
+    libwfdaac
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
