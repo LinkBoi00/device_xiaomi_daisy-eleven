@@ -65,6 +65,14 @@ vendor/lib64/soundfx/libqcbassboost.so|0d2afd6f2c5b9aa2397f3e1cb3287bf906cf8fb6
 vendor/lib64/soundfx/libqcvirt.so|bb046694512d412d6a04bd95ccb2b573454d9717
 
 # Audio ACDB - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+vendor/etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
@@ -73,7 +81,6 @@ vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
-vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Audio dirac - from xiaomi
 lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953  
