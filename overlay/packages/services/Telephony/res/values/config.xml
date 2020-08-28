@@ -43,4 +43,9 @@
     <!-- This device requires that emergency calls are placed over the default data SIM when
          possible because GNSS SUPL can only be received from the network on data subscription. -->
     <bool name="config_gnss_supl_requires_default_data_for_emergency">true</bool>
+
+    <!-- Determine whether calls to mute the microphone in PhoneUtils
+         are routed through the android.media.AudioManager class (true) or through
+         the com.android.internal.telephony.Phone interface (false). -->
+    <bool name="send_mic_mute_to_AudioManager">true</bool>
 </resources>
