@@ -444,6 +444,10 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.daisy
 
+# VNDK
+PRODUCT_PACKAGES += \
+    vndk_package
+
 # Vendor SPL
 VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
     
