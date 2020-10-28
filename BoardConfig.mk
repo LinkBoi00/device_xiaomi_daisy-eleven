@@ -143,8 +143,8 @@ DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_msm8953
-TARGET_RECOVERY_DEVICE_MODULES := //$(DEVICE_PATH):libinit_msm8953
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_daisy
+TARGET_RECOVERY_DEVICE_MODULES := //$(DEVICE_PATH):libinit_daisy
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
@@ -220,4 +220,3 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/daisy/BoardConfigVendor.mk
--include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk

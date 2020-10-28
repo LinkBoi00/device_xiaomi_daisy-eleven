@@ -15,7 +15,6 @@
 #
 
 $(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
-$(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Enable updating of APEXes
@@ -272,7 +271,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.msm8953
+    android.hardware.light@2.0-service.daisy
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
