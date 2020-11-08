@@ -140,6 +140,10 @@ persist.qfp=false
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.fm.transmitter=false
 
+# Framebuffer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
 # Frp
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
@@ -149,14 +153,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 persist.gps.qc_nlp_in_use=1 \
 persist.loc.nlp_name=com.qualcomm.location \
 ro.gps.agps_provider=1
-
-# Graphics
-PRODUCT_PROPERTY_OVERRIDES += \
-debug.sf.early_phase_offset_ns=11600000 \
-debug.sf.early_app_phase_offset_ns=11600000 \
-debug.sf.early_gl_phase_offset_ns=3000000 \
-debug.sf.early_gl_app_phase_offset_ns=15000000 \
-debug.sf.phase_offset_threshold_for_next_vsync_ns=11600000
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -244,11 +240,8 @@ persist.vendor.sys.cnd.iwlan=1 \
 persist.vendor.cne.logging.qxdm=3974
 
 # SurfaceFlinger
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 ro.surface_flinger.protected_contents=true \
-ro.surface_flinger.vsync_event_phase_offset_ns=4000000 \
-ro.surface_flinger.vsync_sf_event_phase_offset_ns=8000000 \
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
 ro.surface_flinger.max_virtual_display_dimension=4096
 
