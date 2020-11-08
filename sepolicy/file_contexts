@@ -46,6 +46,9 @@
 # Perf
 /vendor/lib64/vendor\.qti\.hardware\.perf@2\.0\.so                                     u:object_r:same_process_hal_file:s0
 
+# Persist
+/persist(/*)?                u:object_r:mnt_vendor_file:s0
+
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril.db			u:object_r:rild_file:s0
 
