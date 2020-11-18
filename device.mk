@@ -232,6 +232,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libgenlock \
     libtinyxml \
+    libstagefright_enc_common \
     libvulkan \
     libqdMetaData \
     libqdMetaData.vendor \
