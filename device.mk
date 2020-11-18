@@ -405,6 +405,10 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti_telephony_utils.xml
 
+# Minijail
+PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
