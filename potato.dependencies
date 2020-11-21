@@ -4,6 +4,12 @@
     "target_path" : "kernel/xiaomi/msm8953"
   },
   {
+    "remote"  : "github", 
+    "repository"  : "kdrag0n/proton-clang", 
+    "target_path"  : "prebuilts/clang/host/linux-x86/clang-12.0", 
+    "branch"  : "master"
+  },
+  {
     "repository"  : "vendor_xiaomi_daisy",
     "target_path" : "vendor/xiaomi/daisy"
   }
