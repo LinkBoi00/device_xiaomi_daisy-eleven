@@ -36,7 +36,9 @@ vendor.voice.path.for.pcm.voip=true \
 vendor.voice.playback.conc.disabled=true \
 vendor.voice.record.conc.disabled=false \
 vendor.voice.voip.conc.disabled=true \
-vendor.audio.feature.kpi_optimize.enable=false
+vendor.audio.feature.a2dp_offload.enable=false \
+vendor.audio.feature.kpi_optimize.enable=false 
+
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
