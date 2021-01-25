@@ -217,11 +217,11 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libtinyxml \
     libvulkan \
-    libdisplayconfig.vendor \
+    libdisplayconfig.qti.vendor \
     libqdMetaData \
     libqdMetaData.vendor \
-    vendor.display.config@1.9 \
-    vendor.display.config@1.9_vendor
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
