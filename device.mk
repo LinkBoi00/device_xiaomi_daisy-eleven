@@ -211,16 +211,18 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
     liboverlay \
     libqdMetaData.system \
     libqdMetaData \
     libgenlock \
     libtinyxml \
     libvulkan \
-    libdisplayconfig.qti.vendor \
     libqdMetaData \
     libqdMetaData.vendor \
     vendor.display.config@2.0 \
+    libstagefright_enc_common \
     vendor.display.config@2.0.vendor
 
 # Device-specific settings
