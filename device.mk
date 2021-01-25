@@ -216,6 +216,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libgenlock \
     libtinyxml \
+    libvulkan \
     libdisplayconfig.vendor \
     libqdMetaData \
     libqdMetaData.vendor \
