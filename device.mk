@@ -465,6 +465,7 @@ PRODUCT_PACKAGES += \
 VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
     
 PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libbinderthreadstate.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbinderthreadstate.so \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libbinderthreadstate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinderthreadstate.so
 
 # Verity
