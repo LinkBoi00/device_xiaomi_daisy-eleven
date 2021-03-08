@@ -148,7 +148,6 @@ vendor/firmware/cpp_firmware_v1_1_6.fw
 # Camera - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
 lib64/libseemore.so
 vendor/lib/libchromaflash.so
-vendor/lib/hw/camera.msm8953.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
 vendor/lib/libdualcameraddm.so
@@ -160,15 +159,11 @@ vendor/lib/libjpegehw.so
 vendor/lib/libmibokeh_625.so
 vendor/lib/libgui_vendor.so|90c020e795df4dfdfd6a5722816929069161b42c
 vendor/lib/libMiWatermark.so
-vendor/lib/libmm-qcamera.so
 vendor/lib/libmmcamera_sonyimx135_eeprom.so
 vendor/lib/libmmjpeg.so
-vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmmqjpeg_codec.so
-vendor/lib/libmpbase.so
 vendor/lib/liboptizoom.so
-vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
@@ -177,8 +172,6 @@ vendor/lib/libseemore.so
 vendor/lib/libubifocus.so
 vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
-vendor/lib/libXMFD_AgeGender.so
-vendor/lib/lib_lowlight.so
 vendor/lib/mibokeh_625_opencl.bin
 vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/libcapiv2svacnn.so
@@ -211,8 +204,6 @@ vendor/lib/libactuator_sakura_dw9714v_ofilm.so
 vendor/lib/libactuator_sakura_dw9714v_sunny.so
 
 # Camera Arcsoft - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
-vendor/lib/libarcsoft_beautyshot.so
-vendor/lib/libarcsoft_dualcam_refocus.so
 vendor/lib/libarcsoft_high_dynamic_range.so
 
 # Camera Bin - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
@@ -1842,7 +1833,6 @@ vendor/lib/libmmcamera_imx298.so
 vendor/lib/libmmcamera_imx318.so
 vendor/lib/libmmcamera_imx362.so
 vendor/lib/libmmcamera_imx378.so
-vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmcamera_isp_abf40.so
 vendor/lib/libmmcamera_isp_bcc40.so
 vendor/lib/libmmcamera_isp_be_stats44.so
@@ -1953,30 +1943,6 @@ vendor/lib64/libmmcamera2_stats_algorithm.so
 vendor/lib64/libmmcamera_dbg.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
-
-# Camera HIDL - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM (HACK NEEDED)
-vendor/bin/hw/android.hardware.camera.provider@2.4-service
-vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/android.hardware.camera.provider@2.4-external.so|7818e9b652844f94de7722ff518af907332fd023
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-external-impl.so
-vendor/lib/camera.device@3.4-impl.so
-vendor/lib/camera.device@3.5-external-impl.so
-vendor/lib/camera.device@3.5-impl.so
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/android.hardware.camera.provider@2.4-external.so|fbe302ddf6e54f079b1178f5943fcf32ecb693ed
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-external-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/camera.device@3.5-external-impl.so
-vendor/lib64/camera.device@3.5-impl.so
 
 # CDSP - from Daisy QKQ1.191002.002 V11.0.5.0.QDLMIXM
 vendor/bin/cdsprpcd|a1b4c35ffdef184cc1334f3d1cf4fa56546d3621
