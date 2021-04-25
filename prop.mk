@@ -216,6 +216,10 @@ ro.vendor.extension_library=libqti-perfd-client.so
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.potato.has_cutout=true
 
+# Netflix custom property
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.netflix.bsp_rev=Q6150-17263-1
+
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.use_data_netmgrd=true \
