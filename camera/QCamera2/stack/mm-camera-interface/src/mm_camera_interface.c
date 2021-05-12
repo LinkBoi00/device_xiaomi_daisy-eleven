@@ -1858,7 +1858,10 @@ uint8_t get_num_of_cameras()
             if (entity.type == MEDIA_ENT_T_V4L2_SUBDEV &&
                 entity.group_id == MSM_CAMERA_SUBDEV_SENSOR_INIT) {
                 snprintf(subdev_name, sizeof(dev_name), "/dev/%s", entity.name);
+                LOGE("yes, %s", entity.name);
                 break;
+            } else {
+                LOGE("no, %s", entity.name);
             }
         }
         close(dev_fd);
@@ -1868,7 +1871,7 @@ uint8_t get_num_of_cameras()
     /* Open sensor_init subdev */
     sd_fd = open(subdev_name, O_RDWR);
     if (sd_fd < 0) {
-        LOGE("Open sensor_init subdev failed");
+        LOGE("Open sensor_init subdev failed, %s, error %d", subdev_name, sd_fd);
         return FALSE;
     }
 
