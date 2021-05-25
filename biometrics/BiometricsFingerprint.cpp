@@ -261,27 +261,21 @@ fingerprint_device_t* getDeviceForVendor(const char *class_name)
     return fp_device;
 }
 
-fingerprint_device_t* getFingerprintDevice()
-{
+fingerprint_device_t* getFingerprintDevice() {
     fingerprint_device_t *fp_device;
 
-    fp_device = getDeviceForVendor("fpc");
-    if (fp_device == nullptr) {
-        ALOGE("Failed to load fpc fingerprint module");
-    } else {
-        setFpVendorProp("fpc");
-        return fp_device;
-    }
-
-    fp_device = getDeviceForVendor("goodix");
-    if (fp_device == nullptr) {
-        ALOGE("Failed to load goodix fingerprint module");
-    } else {
-        setFpVendorProp("goodix");
-        return fp_device;
-    }
-
     setFpVendorProp("none");
+
+    const char *vendor[2] = {"fpc", "goodix"};
+    for (int i = 0; i < 2; i++) {
+        fp_device = getDeviceForVendor(vendor[i]);
+        if (fp_device == nullptr) {
+            ALOGE("Failed to load %s fingerprint module", vendor[i]);
+        } else {
+            setFpVendorProp(vendor[i]);
+            return fp_device;
+        }
+    }
 
     return nullptr;
 }
