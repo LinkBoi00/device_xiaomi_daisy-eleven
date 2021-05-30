@@ -1,0 +1,27 @@
+[
+  {
+    "repository" : "Couchpotato-sauce/kernel_xiaomi_daisy",
+    "target_path" : "kernel/xiaomi/msm8953",
+    "branch" : "eleven"
+  },
+  {
+    "repository" : "LinkBoi00/vendor_xiaomi_daisy-eleven",
+    "target_path" : "vendor/xiaomi",
+    "branch" : "eleven"
+  },
+  {
+    "repository" : "SuperCosmicBeing/audio",
+    "target_path" : "hardware/qcom-caf/msm8996-daisy/audio",
+    "branch" : "caf-msm8996-r"
+  },
+  {
+    "repository" : "SuperCosmicBeing/media",
+    "target_path" : "hardware/qcom-caf/msm8996-daisy/media",
+    "branch" : "caf-msm8996-r"
+  },
+  {
+    "repository" : "SuperCosmicBeing/display",
+    "target_path" : "hardware/qcom-caf/msm8996-daisy/display",
+    "branch" : "caf-msm8996-r"
+  }
+]
