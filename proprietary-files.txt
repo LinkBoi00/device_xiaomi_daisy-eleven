@@ -2138,8 +2138,6 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so|b5b39c4f3aedc09bced70f0348980e3ec
 
 # Fingerprint - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
