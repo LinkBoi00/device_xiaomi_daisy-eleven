@@ -47,21 +47,15 @@ service gx_fpd /vendor/bin/gx_fpd
      user system
      group system drmrpc
      writepid /dev/cpuset/system-background/tasks
-	
-on property:sys.fp.vendor=switchf
-    stop gx_fpd
-    setprop sys.fp.vendor searchf
-    setprop fpc.fp.miui.token 0
-    setprop ro.boot.fpsensor fpc
-    setprop ro.hardware.fingerprint searchf
-    start vendor.fps_hal
 
-on property:sys.fp.onstart=1
-   setprop goodix.fp.miui.analyse 1
-   setprop goodix.fp.miui.token 0
-   setprop ro.boot.fpsensor gdx
+on property:sys.fp.vendor=goodix
+   setprop ro.boot.fpsensor goodix
    setprop ro.hardware.fingerprint goodix
-   start vendor.fps_hal
+   setprop persist.sys.fp.vendor goodix
+
+on property:sys.fp.vendor=fpc
+   setprop ro.boot.fpsensor fpc
+   setprop ro.hardware.fingerprint fpc
    
 # Fingerprint Cleaning Script
 service goodix_script /vendor/bin/init.goodix.sh
