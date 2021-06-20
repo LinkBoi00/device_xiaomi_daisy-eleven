@@ -237,9 +237,9 @@ PRODUCT_PACKAGES += \
     libstagefright_enc_common \
     vendor.display.config@2.0.vendor
 
-# Device-specific settings
+# Doze mode
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \

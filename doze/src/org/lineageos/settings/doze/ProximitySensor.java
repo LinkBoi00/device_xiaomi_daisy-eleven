@@ -63,7 +63,7 @@ public class ProximitySensor implements SensorEventListener {
         boolean isNear = event.values[0] < mSensor.getMaximumRange();
         if (mSawNear && !isNear) {
             if (shouldPulse(event.timestamp)) {
-                DozeUtils.launchDozePulse(mContext);
+                Utils.launchDozePulse(mContext);
             }
         } else {
             mInPocketTime = event.timestamp;
@@ -74,12 +74,11 @@ public class ProximitySensor implements SensorEventListener {
     private boolean shouldPulse(long timestamp) {
         long delta = timestamp - mInPocketTime;
 
-        if (DozeUtils.isHandwaveGestureEnabled(mContext) &&
-                DozeUtils.isPocketGestureEnabled(mContext)) {
+        if (Utils.isHandwaveGestureEnabled(mContext) && Utils.isPocketGestureEnabled(mContext)) {
             return true;
-        } else if (DozeUtils.isHandwaveGestureEnabled(mContext)) {
+        } else if (Utils.isHandwaveGestureEnabled(mContext)) {
             return delta < HANDWAVE_MAX_DELTA_NS;
-        } else if (DozeUtils.isPocketGestureEnabled(mContext)) {
+        } else if (Utils.isPocketGestureEnabled(mContext)) {
             return delta >= POCKET_MIN_DELTA_NS;
         }
         return false;
