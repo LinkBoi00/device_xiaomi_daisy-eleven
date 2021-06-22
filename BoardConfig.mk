@@ -211,10 +211,10 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-    /vendor/lib64/hw/gf_fingerprint.default.so|fakelogprint.so \
+    /vendor/lib64/hw/fingerprint.goodix.default.so|fakelogprint.so \
     /vendor/lib64/libgf_ca.so|fakelogprint.so \
     /vendor/lib64/libgf_hal.so|fakelogprint.so \
-    /vendor/lib64/libgoodixfingerprintd_binder.so|fakelogprint.so
+    /vendor/lib64/hw/fingerprint.fpc.default.so|fakelogprint.so
 
 # Telephony
 TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
